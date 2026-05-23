@@ -29,22 +29,41 @@ export default function Home() {
         maxWidth: "1200px",
         margin: "30px auto",
         padding: "20px",
-        background: "#757575",
+        background: "#6c6c6c",
         minHeight: "100vh",
       }}
     >
-      <h1>
-        Sistema de Gestión de Contenidos
-      </h1>
+      <h1
+      style={{
+        fontSize: "20px",
+        fontWeight: "bold",
+        color: "#FFA71D",
+        marginBottom: "5px",
+        fontFamily: "Inter",
+  }}
+>
+  Sistema de Gestión de Contenido
+</h1>
 
       <div
         style={{
-          border: "1px solid #ffffff",
+          border: "1px solid #fafafa",
           padding: "20px",
           borderRadius: "10px",
         }}
       >
-        <h2>Crear nuevo artículo</h2>
+      
+      <h2
+        style={{
+        fontSize: "18px",
+        fontWeight: "600",
+        color: "#FFA71D",
+        marginBottom: "5px",
+        fontFamily: "Inter",
+  }}
+>
+  Crear nuevo artículo
+</h2>
 
         <input
           type="text"
@@ -62,12 +81,18 @@ export default function Home() {
         />
 
         <Editor
-          ref={editorRef}
-          initialValue=""
-          previewStyle="vertical"
-          height="500px"
-          initialEditType="wysiwyg"
-          useCommandShortcut={true}
+            ref={editorRef}
+            initialValue=""
+            previewStyle="vertical"
+            height="500px"
+            initialEditType="wysiwyg"
+            useCommandShortcut={true}
+
+            toolbarItems={[
+              ["heading", "bold", "italic"],
+              ["ul", "ol"],
+              ["image", "link"],
+            ]}
         />
 
         <button

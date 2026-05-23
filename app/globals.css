@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* CONTENIDO DEL EDITOR */
+
+.toastui-editor-contents {
+  font-family: Arial, sans-serif !important;
+  color: #111827 !important;
+}
+
+/* HEADER 1 */
+
+.toastui-editor-contents h1 {
+  color: #111827 !important;
+  font-size: 38px !important;
+  font-weight: bold !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* HEADER 2 */
+
+.toastui-editor-contents h2 {
+  color: #111827 !important;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* HEADER 3 */
+
+.toastui-editor-contents h3 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  font-family: Arial, sans-serif !important;
+}
